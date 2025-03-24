@@ -20,6 +20,13 @@ export function remove_item(id) {
 
 export function list_item_id(id){
     return items.find((I)=>{
-        return I.id == Number(id)}
+        return I.id == Number(id);
+    }); 
+}
+
+export function list_item_type(type){
+    return items.filter((I)=>{
+        return I.type == type }
     ); 
 }
+
