@@ -1,6 +1,6 @@
 import { items } from "./items.js";
 
-export function add_item(name, quantity, type) {
+export function add_item({name, quantity, type}) {
     const item = { id: items.length + 1, name, quantity, type };
     items.push(item);
     return item;
